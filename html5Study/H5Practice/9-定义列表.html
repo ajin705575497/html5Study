@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>9-定义列表</title>
+</head>
+
+<body>
+
+<!-- 
+定义列表
+1 给一堆数据添加列表语义
+2 先通过dt标签定义列表中的所有标题，然后再通过dd标签给每个标题添加描述信息
+
+格式
+<dl>
+	<dt></dt>
+	<dd></dd>
+	<dt></dt>
+	<dd></dd>
+</dl> 
+
+dt  (definition title)定义列表中的标题
+dd  (definition description) 定义标题对应的描述
+
+
+3 应用场景
+1.网站尾部的相关信息
+2.图文混排
+
+注意点
+1 和ul、ol一样，dl和dt、dd是一个整体，所以他们一般情况下不会单独出现，都是一起出现
+2 和ul、ol一样，由于dl和dt、dd是一个组合标签，所以dl中建议只放dt、dd标签
+3 一个dt可以没有对应的dd，也可以有多个对应的dd
+推荐使用一个dt对应一个dd
+4 和li标签一样，当需要丰富界面时，可以在dt和dd标签中继续添加其他标签
+ -->
+
+<dl>
+	<dt>北京</dt>
+	<dd>中国的首都</dd>
+	<dt>上海</dt>
+	<dd>魔都</dd>
+</dl> 
+</body>
+</html>
