@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>014-表格标签的其他标签</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+
+<body>
+
+<!-- 
+caption 表格标签中提供的专门用来设置表格的标题的标签，只要将标题写在此标签中，那么标题就会自动相对于表格的宽度居中
+
+
+注意点
+1 一定要写在table标签中，否则无效
+2 一定要紧跟在table标签后面
+
+标题单元格标签（th）
+用来存储每一列的标题，只要将当前列的标题存储在这个标签中就会自动居中并加粗文字
+
+
+表格中有两种单元格
+th  专门用来存储当前列的标题
+td  专门用来存储数据的
+
+
+ -->
+
+
+
+<table align="left" bgcolor="black" cellspacing="1px" width="800px">
+	<caption>
+		<h2>小说排行榜</h2>
+	</caption>
+	<tr bgcolor="#a9a9a9">
+		<th>排名</th>
+		<th>关键字</th>
+		<th>趋势</th>
+		<th>今日搜索</th>
+		<th>最近7日</th>
+		<th>相关链接</th>
+	</tr>
+	<tr bgcolor="white" align="center">
+		<td>1</td>
+		<td align="left">暴走大事件</td>
+		<td>
+			<img alt="" src="">
+		</td>
+		<td>123123</td>
+		<td>123124</td>
+		<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+		</td>
+	</tr>
+	<tr bgcolor="white" align="center">
+		<td>1</td>
+		<td align="left">暴走大事件</td>
+		<td>
+			<img alt="" src="">
+		</td>
+		<td>123123</td>
+		<td>123124</td>
+		<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+		</td>
+	</tr>
+	<tr bgcolor="white" align="center">
+		<td>1</td>
+		<td align="left">暴走大事件</td>
+		<td>
+			<img alt="" src="">
+		</td>
+		<td>123123</td>
+		<td>123124</td>
+		<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+		</td>
+	</tr>
+	<tr bgcolor="white" align="center">
+		<td>1</td>
+		<td align="left">暴走大事件</td>
+		<td>
+			<img alt="" src="">
+		</td>
+		<td>123123</td>
+		<td>123124</td>
+		<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+		</td>
+	</tr>
+
+</table>
+</body>
+</html>

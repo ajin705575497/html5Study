@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>023-表单练习</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+
+<body>
+
+<form action="http://www.baidu.com">
+	<fieldset> 
+	<legend>注册界面</legend>
+	<p>
+		<label for="acount">账号</label><input type="text" id="acount" name="zh">
+	</p>
+	<p>
+		<label for="pwd">密码</label><input type="password" id="pwd" name="pwd">
+	</p>
+	<!-- 
+	在单选框和多选框中所哟项目的那么必须一致
+	在表单标签中，除了按钮标签以外的标签，都可以通过value来指定需要提交到服务器的数据
+	 -->
+	<p>
+		性别
+		<input type="radio" name="gender" checked="checked" value="male">男
+		<input type="radio" name="gender" value="female">女
+	</p>
+	
+	<p>
+		爱好
+		<input type="checkbox" name="sport" value="basketball">篮球
+		<input type="checkbox" name="sport" value="football">足球
+	</p>
+	
+	<p>
+		简介
+		<textarea rows="10" cols="30" name="desc"></textarea>
+	</p>
+	
+	<p>
+		生日
+		<input type="date" name="brithday">
+	</p>
+	<p>
+		邮箱
+		<input type="email" name="email"> 
+	</p>
+	<p>
+		手机
+		<input type="number" name="phone">
+	</p>
+	<p>
+		<input type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="清空">
+	</p>
+	
+	<!-- 
+	https://www.baidu.com/?
+	zh=2
+	&pwd=2
+	&gender=on
+	&sport=on
+	&desc=234
+	&brithday=2018-10-01
+	&email=112%40qq.com
+	&phone=234234234
+	
+	
+	单选多选框加value后的效果
+	https://www.baidu.com/?
+	zh=2
+	&pwd=2
+	&gender=female
+	&sport=basketball
+	&sport=football
+	&desc=2
+	&brithday=2018-10-02
+	&email=112%40qq.com
+	&phone=23423
+	 -->
+	</fieldset>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>015-表格的结构</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+
+<body>
+
+<!-- 
+由于表格中存储的数据比较复杂，为了方便管理和阅读以及提升语义，可以对表格中存储的数据进行分类
+
+1 分类：
+1 表格的标题
+2 表格的表头信息
+3 表格的主体信息
+4 表格的页尾信息
+
+2 表格的完整结构
+ <table>
+ 	<caption>表格的标题</caption>
+ 	<thead>
+ 		<tr>
+ 			<th>每一列的标题</th>
+ 		</tr>
+ 	</thead>
+ 	<tbody>
+ 		<tr>
+ 			<td>数据</td>
+ 		</tr>
+ 	</tbody>
+ 	<tfoot>
+ 		<tr>
+ 			<td>数据</td>
+ 		</tr>
+ 	</tfoot>
+ 	
+ </table>
+  
+caption :指定表格的标题
+thead   :指定表格的表头信息
+tbody   :指定表格的主体信息
+tfoot   :指定表格的附加
+
+注意点
+1 如果没有编写tbody，系统会自动添加tbody
+2 如果指定了thead和tfoot有自己默认的高度，不会随着表格的高度变化而变化
+ -->
+ 
+ <table border="1px" width="500px" height="300px">
+ 	<caption>学生信息</caption>
+ 	<thead>
+ 		<tr>
+ 			<th>姓名</th>
+ 			<th>年龄</th>
+ 		</tr>
+ 	</thead>
+ 	<tbody>
+ 		<tr>
+ 			<td>张三</td>
+ 			<td>20</td>
+ 		</tr>
+ 		<tr>
+ 			<td>李四</td>
+ 			<td>40</td>
+ 		</tr>
+ 	</tbody>
+ 	<tfoot>
+ 		<tr>
+ 			<td>2</td>
+ 			<td>30</td>
+ 		</tr>
+	</tfoot>
+</table>
+  
+</body>
+</html>
