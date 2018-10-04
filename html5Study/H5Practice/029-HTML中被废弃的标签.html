@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>029-HTML中被废弃的标签</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	.one{
+  	font-weight: bold;
+  	}
+  	.two{
+  		text-decoration: underline;
+  	}
+  	.three{
+  		font-style: italic;
+  	}
+  	.four{
+  		text-decoration: line-through;
+  	}
+  </style>
+</head>
+
+<body>
+<!-- 
+1 为什么HTML中有一部分标签会被废弃？
+因为当前HTML中的标签只有一个作用，就是用来添加语义
+而早起的HTML标签中有一部分标签是没有语义的
+有一部分标签是用来修改样式的
+所以这部分标签就被淘汰了
+
+<br>  换行
+<hr>  横线
+<font>  字体
+
+<b>  加粗(bold)
+<u>  下划线(underlined)
+<i>  斜体(italic)
+<s>  删除线(strikethrough)
+
+注意点：
+以后不推荐使用这些废弃的标签
+如果一定要使用，一般情况下是用来作为CSS的钩子来使用
+
+
+新标签替换老标签
+strong == b
+ins == u
+em == i
+del == s
+
+strong语义：定义重要性强调的文字
+ins语义(inseted)：定义插入的文字
+em语义(emphasized)：定义强调的文字
+del语义(deleted)：定义被删除的文字
+
+
+ -->
+
+<b>我是文字</b>
+<u>我是文字</u>
+<i>我是文字</i>
+<s>我是文字</s>
+<hr>
+
+<strong>我是文字</strong>
+<ins>我是文字</ins>
+<em>我是文字</em>
+<del>我是文字</del>
+<hr>
+
+<p class="one">我是文字</p>
+<p class="two">我是文字</p>
+<p class="three">我是文字</p>
+<p class="four">我是文字</p>
+</body>
+</html>
