@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>040-类选择器</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	.p01{
+  		color:red;
+  	}
+  	.p02{
+  		color:blue;
+  	}
+  	.p03{
+  		color:yellow;
+  	}
+  	.p04{
+  		color:green;
+  	}
+  	.para1{color:red;}
+  	.para2{font-size: 50px;}
+  </style>
+</head>
+
+<body>
+<!-- 
+1 类选择器
+作用：
+根据指定的类名称找到对应的标签，然后设置属性
+
+
+格式
+.类名{
+	属性:值;
+}
+
+注意点：
+1.每个HTML标签都有一个属性叫做class，也就是说每个标签都可以设置class
+2.在同一个界面中class的名称是可以重复的
+3.在编写类选择器时一定要在class名称前面加上.
+4.class名称规范与id命名规范一样
+4.1名称只能由字母、数字、下划线组成
+4.2不能使用数字开头
+4.3不能是HTML标签的名称
+5.类名就是专门用来给特定的标签设置样式的
+6.在HTML中一个标签可以同时绑定多个类名
+格式：
+<标签名称 class="类名1 类名2 ..."><>
+ -->
+ 
+
+<h1>成功法则</h1>
+<p  class="p01">迟到毁一生</p>
+<p  class="p01">早退穷三代</p>
+<p  class="p03">按时上下班</p>
+<p  class="p04">必成高富帅</p>
+
+<p  class="para1 para2">我是段落</p>
+</body>
+</html>

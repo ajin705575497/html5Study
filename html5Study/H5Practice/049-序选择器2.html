@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>049-序选择器2</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+/*   	p:nth-child(odd){ */
+/*   		color:red; */
+/*   	} */
+/*   	p:nth-child(even){ */
+/*   		color:blue; */
+/*   	} */
+  	
+/*   	p:nth-of-type(odd){ */
+/*   		color:red; */
+/*   	} */
+/*   	p:nth-of-type(even){ */
+/*   		color:blue; */
+/*   	} */
+
+/* 	p:nth-child(2n+0){ */
+/* 		color:red; */
+/* 	} */
+/* 	p:nth-child(2n+1){ */
+/* 		color:blue; */
+/* 	} */
+	p:nth-child(3n+0){
+		color:blue;
+	}
+  </style>
+</head>
+
+<body>
+<!-- 
+:nth-child(odd)  选中同级别中的所有奇数
+:nth-child(even) 选中同级别中的所有偶数
+
+:nth-of-type(odd)  同级别同类型的所有奇数
+:nth-of-type(even) 同级别同类型的所有偶数
+
+:nth-child(xn+y)
+x和y是用户自定义的，而n是一个计数器，从0开始递增
+ -->
+<h1>我是标题</h1>
+<p>我是项目</p>
+<p>我是项目</p>
+<p>我是项目</p>
+<p>我是项目</p>
+<p>我是项目</p>
+<p>我是项目</p>
+<p>我是项目</p>
+</body>
+</html>

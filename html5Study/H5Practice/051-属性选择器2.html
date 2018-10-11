@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>051-属性选择器2</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+/*   	img[alt^=abc]{ */
+/*   		color: red; */
+/*   	} */
+/*   	img[alt|=abc]{ */
+/*   		color: red; */
+/*   	} */
+/* 	img[alt$=abc]{ */
+/* 		color: red; */
+/* 	} */
+/* 	img[alt*=abc]{ */
+/* 		color: red; */
+/* 	} */
+	img[alt~=abc]{
+		color: red;
+	}
+  </style>
+</head>
+
+<body>
+<!-- 
+1.属性的取值是以什么开头的
+[attribute|=value]  CSS2    只能找到value开头，并且value是被-和其他内容隔开的
+[attribute^=value]  CSS3    只要是value开台的都能找到
+
+
+
+2.属性的取值是以什么结尾的
+[attribute$=value]  CSS3
+
+3.属性的取值是否包含某个特定的值得
+[attribute~=value]  CSS2  只能找到独立的单词，也就是包含value，并且value被空格隔开的
+[attribute*=value]  CSS3  都能找到
+
+
+-->
+
+<img alt="abcdef" src="">
+<img alt="abc-www" src="">
+<img alt="abc ppp" src="">
+<img alt="defabc" src="">
+<img alt="ppp abc" src="">
+<img alt="www-abc" src="">
+<img alt="qq" src="">
+<img alt="yy" src="">
+<img alt="abcwwwmm" src="">
+<img alt="wwwmmabc" src="">
+<img alt="wwwabcmm" src="">
+<img alt="www-abc-mm" src="">
+<img alt="www abc mm" src="">
+
+
+
+</body>
+</html>

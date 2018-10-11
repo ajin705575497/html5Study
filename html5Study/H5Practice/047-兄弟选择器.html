@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>047-兄弟选择器</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+/*   	h1+p{ */
+/*   		color: red; */
+/*   	} */
+  
+    h1~p{
+    	color:green;
+    }
+  </style>
+  
+  
+</head>
+
+<body>
+<!-- 
+1.相邻兄弟选择器 CSS2
+作用：
+给指定选择器后面紧跟的选择器选中的标签设置属性
+
+格式
+选择器1+选择器2{
+	属性:值;
+}
+
+注意点
+1.必须通过+连接
+2.只能选中紧跟其后的那个标签，不能选中被隔开的标签
+
+
+
+2.通用兄弟选择器 CSS3
+作用：
+给指定选择器后面的所有选择器选中的标签设置属性
+
+格式：
+选择器1~选择器2{
+	属性:值;
+}
+
+注意点：
+1.必须用~连接
+2.选中的是指定选择器后面某个选择器选中的所有标签，无论有没有被隔开都可以被选中
+ -->
+
+<!-- <h1>我是标题</h1>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+<h1>我是标题</h1>
+<a href="#">我是超链接</a>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p> -->
+
+<h1>我是标题</h1>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+<h1>我是标题</h1>
+<a href="#">我是超链接</a>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+</body>
+</html>

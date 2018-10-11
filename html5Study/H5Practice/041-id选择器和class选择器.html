@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>041-id选择器和class选择器</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	.colorR{
+  		color: red;
+  	}
+  	.size30{
+  		font-size: 30px;
+  	}
+  	.uline{
+  		text-decoration: underline;
+  	}
+  </style>
+</head>
+
+<body>
+<!-- 
+
+1.id和class的区别
+1.1 
+id相当于人身份证不可以重复
+class相当于人的名称可以重复
+
+1.2
+一个HTML标签只能绑定一个id名称
+一个HTML标签可以绑定多个class名称
+
+2.id选择器和class选择器的区别
+id选择器时以#开头
+class选择器时以.开头
+
+3.在企业开发中到底用id选择器还是用class选择器
+id一帮情况下是给js使用的，所以除非特殊情况，否则不要使用id选择器
+
+4.一般情况下在企业开发中要注重代码冗余
+ -->
+ 
+<p class="colorR size30">第一段文字</p>
+<p class="size30 uline">第二段文字</p>
+<p class="colorR uline">第三段文字</p>
+
+</body>
+</html>

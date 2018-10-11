@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>034-字体属性补充</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	p{
+/*   		font-family: "草书","微软雅黑"; */
+		font-family: "Times New Roman","微软雅黑";
+  	}
+  </style>
+</head>
+
+<body>
+<!-- 
+1.如果设置的字体不存在，那么系统会使用默认的字体来显示：宋体
+
+2.如果设置的字体不存在，而我们又不想用默认的字体来显示
+可以给字体设置备选方案
+格式： font-family: 字体1,备选方案1,备选方案2,...;
+font-family: "草书","微软雅黑";
+
+
+3.如果想给中文和英文分别设置字体 ，英文字体必须写在前面
+但凡是中文字体，里面都包含英文
+但凡是英文字体，里面都没有包含中文
+也就是说中文字体可以处理英文，但是英文字体无法处理中文
+格式：font-family: 英文字体,中文字体;
+font-family: "Times New Roman","微软雅黑";
+
+补充：
+再企业开发中最常见的字体有以下几个
+中文：宋体/黑体/微软雅黑
+英文：Times New Roman/Arial
+
+并不是名称是英文就一定是英文字体，因为中文字体其实都有自己的英文名称，所以是不是中文字体主要看能不能处理中文
+宋体：SimSum
+黑体：SimHei
+微软雅黑：Microsoft YaHei
+
+ -->
+ 
+<p>abc我是段落</p>
+</body>
+</html>

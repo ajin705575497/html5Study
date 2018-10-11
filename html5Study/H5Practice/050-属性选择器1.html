@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>050-属性选择器1</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+/*   	p[id]{ */
+/*   		color: red; */
+/*   	} */
+  	p[class=cc]{
+  		color: red;
+  	}
+  </style>
+  
+</head>
+
+<body>
+<!-- 
+1.属性选择器
+作用：
+根据指定的属性名称找到对应的标签，然后设置属性
+
+格式：
+[attribute]
+作用：
+根据指定的属性名称找到对应的标签，然后设置属性
+示例：
+p[id]{}
+先找到p标签，再找到p标签中带id属性的
+
+[attribute=value]
+作用：
+找到有指定属性，并且属性的取值等于value的标签，然后设置属性
+示例：
+p[class=cc]{}
+
+最常见的应用场景，就是区分input属性
+input[type=password]{}
+<input type="text" name="" id="">
+<input type="password" name="" id="">
+ -->
+ 
+<p id="identity1">我是段落1</p> 
+<p id="identity2" class="cc">我是段落2</p> 
+<p class="cc">我是段落3</p> 
+<p id="identity3"  class="para">我是段落4</p> 
+<p>我是段落5</p> 
+<p>我是段落6</p> 
+</body>
+</html>
