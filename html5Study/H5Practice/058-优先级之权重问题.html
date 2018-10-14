@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>058-优先级之权重问题</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+/*   	#identity1 .box2{color: red;} */
+/*   	.box1 .box2{color: green;} */
+/*   	div ul li p{color: blue;} */
+
+/* 	.box1 .box2{color: blue;}  */
+/* 	div .box2{color: green;} */
+	
+/* 	#identity1 ul li p{color: red;} */
+/* 	#identity1 ul p{color: green;} */
+	
+	#identity1 ul .box2{color:red;}
+	.box1 li #identity2{color: blue;}
+}
+  </style>
+</head>
+
+<body>
+<!-- 
+1 优先级的权重
+作用：
+当多个选择器混合在一起使用时，我们可以通过计算权重来判断谁的优先级最高
+
+2 权重的计算
+2.1 首先先计算选择器中有多个个id，id多的选择器优先级最高
+2.2 如果id的个数一样，那么再看类名的个数，类名个数多的优先级最高
+2.3 如果类名的个数一样，那么再看标签的个数，标签个数多的优先级最高
+2.4 如果id个数一样，类名个数一样，标签名称个数也一样，那么就不会继续往下计算，那么此时写在最后面的生效
+
+注意点
+1.只有选择器是直接选中标签的才需要计算权重
+
+ -->
+
+<div id="identity1" class="box1">
+	<ul>
+		<li>
+			<p id="identity2" class="box2">我是段落</p>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

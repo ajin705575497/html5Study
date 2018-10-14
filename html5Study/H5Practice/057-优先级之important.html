@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>057-优先级之important</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	#identity{color: yellow; font-size: 10px;}
+  	.para{color:green;}
+  	p{color: skyblue ; }
+  	*{color:red !important;  font-size: 30px;}
+  	li{color: blue ;} 
+  	
+  </style>
+</head>
+
+<body>
+<!-- 
+1 important
+作用：
+用于提升某个直接选中标签的选择器中的某个属性的优先级的，可以将被执行的属性的优先级提升为最高
+
+注意点：
+1 important只能用于直接选中，不能用于间接选中
+2 通配符选择器选中的标签也是直接选中的
+3 !important只能提升被指定的属性的优先级，其他属性的优先级不会提升
+4 !important必须写在属性值的分号前面
+5 !important前面的感叹号不能省略
+-->
+
+<ul>
+	<li>
+		<p id="identity" class="para">我是段落</p>
+		
+	</li>
+	
+</ul> 
+
+</body>
+</html>
