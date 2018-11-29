@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>059-div和span标签</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	.header{
+  	width:980px;
+  	height:100px;
+  	background: red;
+  	margin: auto;
+  	margin-bottom:10px; 
+  	}
+  	.content{
+  	width:980px;
+  	height:500px;
+  	background: green;
+  	margin: auto;
+  	margin-bottom:10px; 
+  	}
+  	.footer{
+  	width:980px;
+  	height:100px;
+  	background: blue;
+  	margin: auto;
+  	margin-bottom:10px; 
+  	}
+  	.logo{
+  	width:200px;
+  	height:50px;
+  	background: pink;
+  	float: left;
+  	margin:20px; 
+  	}
+  	.nav{
+  	width:600px;
+  	height:50px;
+  	background: yellow;
+  	float: right;
+  	margin:20px; 
+  	}
+  	.aside{
+  	width:250px;
+  	height:460px;
+  	background: purple;
+  	float: left;
+  	margin:20px; 
+  	}
+  	.article{
+  	width:650px;
+  	height:460px;
+  	background: blue;
+  	float: right;
+  	margin:20px; 
+  	}
+  	span{color: red;}
+  </style>
+</head>
+
+<body>
+<!-- 
+1.div
+作用：
+一般用于配合CSS完成网页的基本布局
+
+
+
+2.span
+作用：
+一般用于配合CSS修改网页的一些局部信息
+
+3.div与span的区别
+1.div会单独占用一行，span不会单独占用一行
+2.div是一个容器级别的标签，span是一个文本级的标签
+
+4.容器级的标签和文本级的标签的区别
+容器级的标签中可以嵌套其他所有标签
+文本级的标签只能嵌套文字、超链接、图片
+
+容器级
+div h ul ol dl li..
+
+文本级
+span p buis stong em ins del..
+
+ -->
+ 
+<div class="header">
+	<div class="logo"></div>
+	<div class="nav"></div>
+</div>
+<div class="content">
+	<div class="aside"></div>
+	<div class="article"></div>
+</div>
+
+<div class="footer"></div>
+
+
+
+<p>好好<span>学习</span>，天天<span>向上</span></p>
+
+<div>我是div</div>
+<div>我是div</div>
+
+<span>我是span</span>
+<span>我是span</span>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>066-背景定位属性</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+/*   	div{ */
+/*   		width: 500px; */
+/*   		height: 500px; */
+/*   	} */
+  	.box1{
+  		background-image: url("img/temp.png");
+  		background-repeat: no-repeat;
+  		background-color: red;
+/*   		background-position: right top; */
+/* 		background-position: 100px 200px; */
+		background-position: -20px 200px;
+  	}	
+  
+  </style>
+</head>
+
+<body>
+<!-- 
+
+1 如何控制背景图片的位置
+在CSS中有一个叫做background-position: 属性
+就是专门用于控制背景图片的位置
+
+2 格式
+background-position: 水平方向  垂直方向;
+
+
+3 取值
+3.1 具体的方位名词
+水平方向：left center right
+垂直方向： top center bottom
+3.2 具体的像素
+一定要写单位:px
+可以支持负数
+
+
+
+注意点：
+同一个标签可以同时设置背景颜色和背景图片
+如果颜色和图片同时存在，那么图片会覆盖颜色
+
+
+
+
+ -->
+<div class="box1"></div>
+</body>
+</html>

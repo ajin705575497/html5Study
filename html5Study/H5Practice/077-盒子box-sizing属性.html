@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>077-盒子box-sizing属性</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	.content{
+  		width: 300px;
+  		height: 300px;
+  		background-color: red;
+  	}
+  	.aside{
+  		width: 100px;
+  		height: 200px;
+  		background-color: green;
+  		float: left;
+  	}
+  	.article{
+  		box-sizing:border-box;
+  		width: 200px;
+  		height: 200px;
+  		background-color: blue;
+  		float: right;
+   		border:20px solid #000; 
+  	}
+  
+  </style>
+</head>
+
+<body>
+
+<!-- 
+CSS3中新增一个box-sizing属性，这个属性可以保证我们给盒子新增padding和border之后盒子元素的宽度和高度不变
+
+增加padding和border之后，为了保证盒子元素高度不变，会减去一部分内容的宽度和高度
+
+box-sizing 取值
+content-box  默认取值 元素的宽高=边框+内边距+内容宽高
+border-box   元素的宽高=width/height属性
+
+注意点：
+1 如果两个盒子是嵌套关系，那么设置了里面一个盒子顶部的外边距，外面的盒子也会被顶下来
+2 如果外面的盒子不想被一起顶下来，可以给外面的盒子添加一个边框属性
+3 在企业开发中，一般情况下如果需要控制嵌套关系盒子之间的距离，应该首先考虑padding，其次再考虑margin
+  margin本质上是用来控制兄弟关系之间的间隙的
+  
+在嵌套关系中，我们可以利用
+margin:0 auto;
+的方式让里面的盒子在外面的盒子中水平居中
+只对水平方向有效，对垂直方向无效
+  
+ -->
+
+<div class = "content">
+  	<div class="aside"> </div>
+  	<div class="article"> </div>
+</div>
+</body>
+</html>

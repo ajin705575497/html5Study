@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>060-CSS元素的显示模式</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	div{background: red;}
+  	span {
+	background: blue;
+}
+img {
+	width:50px;
+	height: 50px;
+}
+  </style>
+</head>
+
+<body>
+<!-- 
+
+在HTML中将所有的标签分为两类：容器级和文本级
+在CSS中也将所有的标签分为两类：块级元素和行内元素
+
+1 块级元素、行内元素
+块级元素会独占一行
+行内元素不会独占一行
+
+容器级
+div h ul ol dl li..
+
+文本级
+span p buis stong em ins del..
+
+
+块级元素
+p div h ul ol dl li..
+
+行内元素
+span buis stong em ins del..
+
+2.块级元素和行内元素的区别
+2.1块级元素
+独占一行
+如果没有设置宽度，默认跟父元素一样宽
+如果设置了宽高，那么就按照设置的来显示
+
+2.2行内元素
+不会独占一行
+如果没有设置宽度，那么默认与内容一样宽
+行内元素是不可以设置高度和宽度的
+
+
+2.3行内块级元素
+为了能够让元素即不独占一行,又可以设置宽度和高度，那么就出现了行内块级元素
+
+ -->
+
+<div>我是div</div>
+<p>我是段落</p>
+<h1>我是标题</h1>
+<hr>
+
+<span>我是span</span>
+
+<b>我是加粗</b>
+<strong>我是强调</strong>
+<hr>
+<img alt="" src="img/wife.jpg">
+<img alt="" src="img/wife.jpg">
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>061-CSS元素显示模式转换</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	div {
+	display: inline;
+	background: red;
+	width: 200px;
+	height: 200px;
+}
+  span {
+	display: block;
+	background: red;
+	width: 100px;
+	height: 50px;
+}
+	.cc {
+	display: inline-block;
+	background: red;
+	width: 100px;
+	height: 50px;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- 
+
+1 CSS元素的显示模式转换
+设置元素的display属性
+
+取值
+block  块级
+inline 行内
+inline-block 行内块级
+
+
+ -->
+
+<div>我是div</div>
+<div>我是div</div>
+
+<span>我是span</span>
+<span>我是span</span>
+
+<p class="cc">我是段落</p>
+<b class="cc">我是加粗</b>
+</body>
+</html>
