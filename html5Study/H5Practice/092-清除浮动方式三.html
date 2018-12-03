@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>092-清除浮动方式三</title>
+  <meta name="description" content="">
+  <meta name="author" content="wwwji">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style type="text/css">
+  	*{
+  		margin: 0;
+  		padding: 0;
+  	}
+  	
+    .box1{
+    	background-color: red;
+/*     	margin-bottom: 20px; */
+    }
+    
+    .box1 p{
+    	background-color: blue;
+    	width: 100px;
+    	
+    }
+    
+    .box2{
+    	background-color: green;
+/*     	margin-top: 10px; */
+    	
+    }
+    
+    .box2 p{
+    	background-color: yellow;
+    	width: 100px;
+    }
+    p{
+    	float: left;
+    }
+    .wall{
+    	clear:both;
+    }
+    .h20{
+    	height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<!-- 
+1 清除浮动的第三种方式
+隔墙法
+
+2 外墙法
+1 在两个盒子中间添加一个额外的块级元素
+2 给这个块级元素设置clear:both;属性
+
+注意点：
+外墙法可以让第二个盒子使用marin-top属性
+外墙法不可以让第一个盒子使用marin-bottom属性
+
+一般是给额外增加的块级元素设置高度来时间盒子之间的距离
+
+
+3 内墙法
+1 在第一个盒子中所有子元素最后添加一个额外的块级元素
+2 给这个块级元素设置clear:both;属性
+
+注意点：
+1 外墙法可以让第二个盒子使用marin-top属性
+2 外墙法可以让第一个盒子使用marin-bottom属性
+3 可以让给额外增加的块级元素设置高度来时间盒子之间的距离
+
+
+
+4 外墙法与内墙法的区别
+外墙法不能撑起第一个盒子的高度，而外墙法可以撑起第一个盒子的高度
+
+5 在企业开发中部常用隔墙法清除浮动
+ -->
+  <div class="box1">
+    <p>文字1</p>
+    <p>文字1</p>
+    <p>文字1</p>
+    <div class="wall h20"></div>  <!--内墙法  -->
+  </div>
+  
+<!--  外墙法 <div class="wall h20"></div> -->
+  
+  <div class="box2">
+    <p>文字2</p>
+    <p>文字2</p>
+    <p>文字2</p>
+  </div>
+
+</body>
+</html>
