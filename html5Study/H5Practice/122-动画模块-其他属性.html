@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>122-动画模块-其他属性</title>
+
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+    
+            }
+            div{
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                animation-name:jjj;
+                animation-duration:3s;
+                animation-delay: 100ms;
+                animation-timing-function: linear;
+                animation-iteration-count: 3;
+                animation-direction: alternate;
+                animation-play-state: running;
+            }
+            div:hover{
+                animation-play-state: paused;
+            }
+            @keyframes jjj{
+                from{
+                    margin-left:0;
+                }
+                to{
+                    margin-left:500px;
+                }
+            }
+    
+        </style>
+</head>
+<body>
+<!--
+    告诉系统延迟多少s执行动画
+    animation-delay: 2s;   
+
+    告诉系统动画执行的速度  取值与过渡相同
+    animation-timing-function: linear;
+
+    告诉系统动画执行的次数   默认是1
+    animation-iteration-count: 3;
+
+    是否做往返动画  
+    取值   
+    normal 默认   
+    alternate  往返
+    animation-direction: normal;
+
+    控制动画是运动还是暂停
+    running   默认 执行动画
+    paused  暂停动画
+    animation-play-state: running;
+-->
+    <div></div>   
+</body>
+</html>

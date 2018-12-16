@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>116-2D转换模块-旋转轴向</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li img{
+            width: 200px;
+            height: 200px;
+        }
+
+        ul{
+            width: 800px;
+            height: 500px;
+            border: 1px solid #000000;
+            margin: 0 auto;
+            /*
+            
+            */
+            perspective: 500px;
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border: 1px solid #000000;
+
+            
+        }
+        ul li:nth-child(1){
+            transform: rotate(45deg);
+        }
+        ul li:nth-child(2){
+            transform: rotateX(45deg);
+        }
+        ul li:nth-child(3){
+            transform: rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+<!--
+    1 默认情况下所有元素都是围绕着Z轴旋转
+    
+    rotateX
+    rotateY
+    rotateZ == rotate
+
+
+    2 透视属性
+    近大远小
+    参数 距离多远
+    perspective: 500px;
+
+    注意点：
+    透视属性必须添加到需要呈现透视属性效果的元素的父元素上面
+-->    
+    <ul>
+        <li><img src="img/wifesmall.png" alt=""></li>
+        <li><img src="img/wifesmall.png" alt=""></li>
+        <li><img src="img/wifesmall.png" alt=""></li>
+    </ul>
+</body>
+</html>

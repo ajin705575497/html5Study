@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>123-动画模块-其他属性2</title>\
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+    
+            }
+            .box1{
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                animation-name:jjj;
+                animation-duration:3s;
+                position: absolute;
+                left:0px;
+                top:0px;
+                
+            }
+            div:hover{
+                animation-play-state: paused;
+            }
+            @keyframes jjj{
+                0%{
+                    left:0px;
+                    top:0px;
+                }
+                25%{
+                    left:200px;
+                    top:0px;
+                }
+                50%{
+                    left:200px;
+                    top:200px;
+                }
+                75%{
+                    left:0px;
+                    top:200px;
+                }
+                100%{
+                    left:0px;
+                    top:0px;
+                }
+            }
+            
+            .box2{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                margin: 100px auto;
+                animation-name:myRotate;
+                animation-duration: 5s;
+                animation-fill-mode: both;
+            }
+            @keyframes myRotate{
+                0%{
+                    transform: rotate(10deg);
+                }
+                50%{
+                    transform: rotate(50deg);
+                }
+                100%{
+                    transform: rotate(70deg);
+                }
+            }
+        </style>
+</head>
+<body>
+<!--
+
+    动画是有一定的状态的
+    1 等待状态
+    2 执行状态
+    3 结束状态
+
+    animation-fill-mode: none;
+    指定动画等待状态和结束动态的样式
+    none               不做任何改变
+    forwards           让元素结束状态的时候保持动画最后一帧的样式
+    backwards          让元素等待状态的时候显示动画第一帧的样式
+    both               让元素等待状态的时候显示动画第一帧的样式、让元素结束状态的时候保持动画最后一帧的样式
+-->
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

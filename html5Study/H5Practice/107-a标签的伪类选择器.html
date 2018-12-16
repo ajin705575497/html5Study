@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>107-a标签的伪类选择器</title>
+    <style>
+        a:link{
+            color: skyblue;
+        }
+        a:visited{
+            color: blueviolet
+        }
+        a:hover{
+            color: orangered;
+        }
+        a:active{
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+<!--
+    1 a标签存在一定的状态
+    1.1 默认状态，从未被访问过
+    1.2 被访问过的状态
+    1.3 鼠标长按状态
+    1.4 鼠标悬停在标签上的样式
+
+    2 a标签的伪类选择器
+    a标签的伪类选择器时专门用来修改a标签不同状态的样式的
+
+    3 格式
+    :link  修改从未被访问过的样式
+    :visited 修改被访问过状态下的样式
+    :hover 修改鼠标悬停在a标签上的样式
+    :active 修改鼠标长按状态的样式
+
+    4 注意点
+    4.1 a标签的伪类选择器可以单独出现也可以一起出现
+    4.2 a标签的伪类选择器如果一起出现，那么有严格的顺序要求
+    link visited hover active
+    4.3 如果默认状态的样式和被访问过状态的样式一样，可以缩写
+        a{
+            color: ;
+        }
+-->
+    <a href="http://www.taobao.com">taobao</a>
+    <a href="http://www.jd.com">jd</a>
+</body>
+</html>

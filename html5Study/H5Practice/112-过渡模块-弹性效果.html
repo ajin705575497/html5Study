@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>112-过渡模块-弹性效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            margin-top: 100px;
+            text-align: center;
+            line-height: 100px;
+            
+
+
+        }
+        div span{
+            font-size: 80px;
+            /* transition-property: margin;
+            transition-duration: 3s; */
+            transition: margin 3s;
+        }
+        div:hover span{
+            margin:0 50px; 
+        }
+    </style>
+</head>
+<body>
+<!--
+    1 先编写基本界面
+    2 修改需要认为需要修改的属性
+    3 给被修改属性的那个元素添加过渡
+-->   
+    <div>
+        <span>贾</span>
+        <span>纪</span>
+        <span>金</span>
+    </div>
+</body>
+</html>
